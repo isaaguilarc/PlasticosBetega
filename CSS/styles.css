@@ -1,0 +1,316 @@
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+
+/* Encabezado */
+header {
+    background-color: #fff;
+    color: #228b22;
+    padding: 10px 0;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.logo-nombre {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    height: 90px;
+    margin-right: 10px;
+}
+
+.telefonologo {
+    height: 30px;
+    margin-right: 10px;
+}
+
+.nombre-empresa {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.contacto-redes {
+    display: flex;
+    align-items: center;
+}
+
+.telefono {
+    margin-right: 30px;
+}
+
+.redes img {
+    height: 30px;
+    margin: 0 5px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #fff; /* Blanco */
+    border-top: 2px solid #228B22; /* Línea verde bosque */
+}
+
+nav ul li {
+    margin: 0 30px;
+}
+
+nav ul li a {
+    color: #5a5a5a;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 15px 0;
+    display: block;
+}
+
+
+/* Secciones */
+.background-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.section{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    transition: background-image 1s ease-in-out;
+    color: #010101;
+    text-align: center;
+}
+
+.content {
+    background: linear-gradient(to bottom, #f4f4f4, #a7bda7, #f4f4f4);
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #fff;
+    margin: 20px 0;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+
+
+/* Sección Nosotros */
+#nosotros .content {
+    display: flex;
+    align-items: center; /* Centrar verticalmente */
+    justify-content: center;
+    padding: 20px;
+    gap: 20px; /* Espacio entre la imagen y el texto */
+}
+
+#nosotros .imagen {
+    flex: 1; /* Permitir que la imagen ocupe espacio proporcional */
+    max-width: 40%; /* Ajustar el ancho máximo de la imagen */
+}
+
+#nosotros .imagen img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+#nosotros .texto {
+    flex: 2; /* Permitir que el texto ocupe más espacio */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Alinea los textos a la izquierda */
+    max-width: 60%; /* Ajustar el ancho máximo del texto */
+    text-align: justify;
+    margin-right: 25px; 
+}
+
+#nosotros .texto h2 {
+    margin: 0;
+    font-size: 30px;
+    color: #5a5a5a;
+}
+
+#nosotros .linea-horizontal {
+    width: 100%; /* Ancho de la línea */
+    height: 5px; /* Grosor de la línea */
+    background-color: #228B22; /* Cambia el color según prefieras */
+    margin: 10px 0;
+}
+
+#nosotros p {
+    margin: 0;
+    font-size: 17px;
+}
+
+
+/*Sección Productos*/
+#productos .content {
+    display: flex;
+    align-items: center; /* Centrar verticalmente */
+    justify-content: center;
+    padding: 20px;
+    gap: 25px; /* Espacio entre el texto y la imagen */
+}
+
+#productos .texto {
+    flex: 2; /* Permitir que el texto ocupe más espacio */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Alinea los textos a la izquierda */
+    max-width: 60%; /* Ajustar el ancho máximo del texto */
+    text-align: justify;
+    margin-left: 25px; 
+}
+
+#productos .texto h2 {
+    margin: 0;
+    font-size: 30px;
+    color: #5a5a5a;
+    text-align: left;
+}
+
+#productos .linea-horizontal {
+    width: 100%; /* Ancho de la línea */
+    height: 4px; /* Grosor de la línea */
+    background-color: #228B22; /* Cambia el color según prefieras */
+    margin: 10px 0;
+}
+
+#productos p {
+    margin: 0;
+    font-size: 17px;
+    text-align: justify;
+}
+
+#productos .imagen {
+    flex: 1; /* Permitir que la imagen ocupe espacio proporcional */
+    max-width: 40%; /* Ajustar el ancho máximo de la imagen */
+}
+
+#productos .imagen img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+#productos .movimiento {
+    position: relative; /* Asegúrate de que esto esté configurado */
+    cursor: pointer;
+    width: 177px;
+    height: 160px;
+    left: 0; /* Posición inicial */
+    transition: left 5s cubic-bezier(0.0, 0.5, 0.5, 1.0);
+}
+
+
+
+/*Líneas*/
+.titulo-linea {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    color: #5a5a5a;
+    font-size: 20px;
+}
+
+.linea-horizontal {
+    width: 460px; /* Longitud de la línea */
+    height: 10px; /* Grosor de la línea */
+    background-color: #228B22; /* Color verde bosque */
+    margin-right: 30px;
+    margin-left: 30px;
+}
+
+.image-container {
+    display: flex; /* Para centrar la imagen */
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente si es necesario */
+    height: auto; /* Asegúrate de que el contenedor se ajuste a la imagen */
+    padding: 0; /* Eliminar espacio adicional */
+}
+
+.image-container img {
+    width: 70%; /* Ajusta el ancho según sea necesario */
+    max-width: 100%; /* Evitar que la imagen se desborde del contenedor */
+    height: auto; /* Mantener la proporción de la imagen */
+    margin: 0 auto; /* Centrar la imagen */
+}
+
+/* Formulario de contacto */
+form {
+    padding: 80px 40px;
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    background: linear-gradient(to bottom, #f4f4f4, #a7bda7, #f4f4f4);
+}
+
+form h2 {
+    text-align: center; /* Centra el título dentro del formulario */
+    margin-bottom: 50px; /* Añade un margen inferior para separarlo del primer campo */
+    font-size: 30px;
+    color: #5a5a5a;
+}
+
+form .contacto {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    flex-direction: column; 
+    height: 100vh;
+}
+
+form label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+}
+
+form button {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 40px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Pie de página */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
