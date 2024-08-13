@@ -82,6 +82,15 @@ nav ul li a {
     font-weight: bold;
     padding: 15px 0;
     display: block;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    width: 150px; /* Ancho fijo para todos los enlaces */
+    text-align: center; /* Centra el texto dentro del enlace */
+}
+
+nav ul li a:hover {
+    background-color: #228B22; /* Color de fondo rojo al hacer hover */
+    color: #FFF; /* Cambia el color del texto a blanco */
+    border-radius: 5px; /* Bordes redondeados opcionales */
 }
 
 /* Secciones */
@@ -253,6 +262,7 @@ form {
     margin: 0 auto;
     text-align: left;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    background: linear-gradient(to bottom, #f4f4f4, #a7bda7, #f4f4f4);
 }
 
 form h2 {
