@@ -82,6 +82,15 @@ nav ul li a {
     font-weight: bold;
     padding: 15px 0;
     display: block;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    width: 150px; /* Ancho fijo para todos los enlaces */
+    text-align: center; /* Centra el texto dentro del enlace */
+}
+
+nav ul li a:hover {
+    background-color: #228B22; /* Color de fondo rojo al hacer hover */
+    color: #FFF; /* Cambia el color del texto a blanco */
+    border-radius: 5px; /* Bordes redondeados opcionales */
 }
 
 
@@ -110,7 +119,7 @@ nav ul li a {
 }
 
 .content {
-    background: linear-gradient(to bottom, #f4f4f4, #a7bda7, #f4f4f4);
+    /* background: linear-gradient(to bottom, #f4f4f4, #a7bda7, #f4f4f4); */
     padding: 40px 20px;
     text-align: center;
     background-color: #fff;
@@ -154,7 +163,23 @@ nav ul li a {
     margin: 0;
     font-size: 30px;
     color: #5a5a5a;
+    animation-duration: 5s;
+    animation-name: slidein;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
 }
+
+@keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
 
 #nosotros .linea-horizontal {
     width: 100%; /* Ancho de la línea */
@@ -166,6 +191,7 @@ nav ul li a {
 #nosotros p {
     margin: 0;
     font-size: 17px;
+    color: #010101;
 }
 
 
