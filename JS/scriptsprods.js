@@ -1,7 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
     const sections = document.querySelectorAll('.section');
     const elements = document.querySelectorAll('.feature-image');
-    const textoNosotros = document.querySelector("#nosotros .texto h2");
 
     // Función para actualizar los fondos de las secciones
     function updateBackground() {
@@ -33,10 +32,6 @@ document.addEventListener('DOMContentLoaded', function() {
                 element.classList.add('animate');
             }
         });
-    }
-
-    if (isElementInViewport(textoNosotros)) {
-        textoNosotros.classList.add('animate');
     }
 
     // Llamada inicial para establecer el fondo correcto y animaciones en scroll
