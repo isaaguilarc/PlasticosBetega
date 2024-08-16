@@ -11,6 +11,10 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
+    function animateImage(img) {
+        img.style.left = '450px'; // Cambia la posición de 'left'
+    }
+
     // Función para verificar si un elemento está en la vista
     function isElementInViewport(el) {
         const rect = el.getBoundingClientRect();
@@ -43,6 +47,7 @@ document.addEventListener('DOMContentLoaded', function() {
     window.addEventListener('scroll', updateBackground);
     window.addEventListener('scroll', animateOnScroll);
     window.addEventListener('resize', animateOnScroll);
+    window.addEventListener('DOMContentLoaded', animateOnScroll);
 
     // Animar la imagen al hacer clic
     const image = document.querySelector('#productos .movimiento');
